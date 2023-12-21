@@ -1,0 +1,70 @@
+.messageInput {
+    justify-content: center;
+    margin-top: 10px;
+    border: 1px solid #d0d0d0;
+    border-radius: 10px; /* Rounded corners */
+    width: 400px;
+    height:35px;
+}
+
+.mainBox {
+    min-height: 500px;
+    max-height: 500px;
+}
+
+.sendMessage {
+    border: 1px solid #d0d0d0;
+    border-radius: 10px; /* Rounded corners */
+    background: linear-gradient(-45deg, #4b87e2 0%, #23fbff 100%);
+    font-weight: bold;
+    margin: 5px;
+    transition: background 0.5s ease, border 0.5s ease;
+}
+.sendMessage:hover {
+    cursor: pointer;
+    background: linear-gradient(-45deg, #23fbff 0%, #4b87e2 100%);
+    border: 1px solid black;
+    
+}
+
+.chatbox {
+    width: auto; /* Fixed width */
+    height: auto; /* Fixed height */
+    min-width: 400px;
+    min-height: 500px;
+    max-height: 500px;
+    border: 1px solid #d0d0d0;
+    border-radius: 10px; /* Rounded corners */
+    overflow-y: auto; /* Enable scroll for overflow */
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+    background-color: #f9f9f9;
+    
+}
+
+.messagebubble {
+    background-color: lightblue; /* Light blue background for message bubble */
+    border-radius: 15px; /* Rounded corners for bubbles */
+    padding: 10px;
+    margin: 5px; /* Spacing between messages */
+    max-width: fit-content; /* Max width of message bubble */
+    word-break: break-word; /* Ensure long words do not overflow */
+    font-weight: bold;
+    font-family: sans-serif;
+    overflow-y: auto;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0;
+}
+
+/*.currentUser {
+    background-color: #daf8cb; /* Light green background for the current user
+    margin-left: auto; 
+  }*/
+  
+.otherUser {
+    background-color: #f1f0f0; /* Light gray background for other users */
+    margin-right: auto; /* Align to the left */
+}
