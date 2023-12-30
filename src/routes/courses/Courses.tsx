@@ -67,7 +67,7 @@ const Courses = () => {
             <ul>
             {data.map((course, index) => (
                 <strong>
-                <li key={index} className="nav-item-list">
+                <li key={course.id} className="nav-item-list">
                     <Link to="../courses/selectedCourseView" className="nav-link text-dark" onClick={() => handleCourseClick(course)} state={course}>
                         {course.courseName} - {course.courseCode}
                     </Link>
@@ -76,7 +76,7 @@ const Courses = () => {
             ))}
         </ul>
 
-        <form onSubmit={handleNewCourseSubmit}>
+        {/*<form onSubmit={handleNewCourseSubmit}>
                 <label htmlFor="courseName">Course Name:</label>
                 <input
                     type="text"
@@ -94,7 +94,7 @@ const Courses = () => {
                     
                 />
                 <button type="submit">Add Course</button>
-            </form>
+            </form>*/}
 
         </>
     );

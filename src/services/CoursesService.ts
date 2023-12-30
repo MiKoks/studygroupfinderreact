@@ -9,7 +9,7 @@ export class CoursesService extends BaseEntityService<ICourses> {
 
     async add(jwtData: IJWTResponse, newCourse: ICourses): Promise<boolean> {
         try {
-            const response = await this.axios.post("https://localhost:7189/api/v1/Courses", newCourse, {
+            const response = await this.axios.post("http://localhost:8000/api/v1/Courses", newCourse, {
                 headers: {
                     'Authorization': 'Bearer ' + jwtData.jwt 
                 }

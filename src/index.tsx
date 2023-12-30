@@ -25,6 +25,7 @@ import SelectedCourseView from './routes/courses/SelectedCourseView';
 import { IdentityService } from './services/IdentityService';
 import SignalRService from './services/SignalRService';
 import SignalRComponent from './routes/Chats/SignalRComponent';
+import SelectedStudyGroupView from './routes/studyGroups/SelectedStudyGroupView';
 //import signalRService from './signalRService';
 //import SignalRTest from './SignalRTest'
 
@@ -67,6 +68,12 @@ const router = createBrowserRouter([
           {
             path: "studyGroups/",
             element: <StudyGroups />,
+            children: [
+              {
+              path: "selectedStudyGroupView/",
+              element: <SelectedStudyGroupView/>,
+            },
+          ]
           },
           {
             path: "myhub/",

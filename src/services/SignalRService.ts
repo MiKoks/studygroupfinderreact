@@ -1,6 +1,6 @@
 import { HubConnectionBuilder, LogLevel, HubConnection, HubConnectionState, HttpTransportType } from '@microsoft/signalr';
 
-const hubUrl = 'https://localhost:7189/myhub';
+const hubUrl = 'http://localhost:8000/myhub';
 
 class SignalRService {
     private static instance: SignalRService;
